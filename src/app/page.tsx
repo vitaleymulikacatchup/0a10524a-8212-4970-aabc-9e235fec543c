@@ -17,7 +17,7 @@ const assetMap = [
 export default function Home() {
   return (
     <ThemeProvider
-      defaultButtonVariant="slide-background"
+      defaultButtonVariant="text-stagger"
       defaultTextAnimation="entrance-slide"
       borderRadius="rounded"
     >
@@ -26,7 +26,7 @@ export default function Home() {
           brandName="Pizzeria"
           logoSrc={assetMap.find(a => a.id === "pizzeria-logo")?.url}
           buttonText="Order Now"
-          buttonVariant="slide-background"
+          buttonVariant="text-stagger"
           navItems={[
             { name: "Home", id: "hero" },
             { name: "About", id: "about" },
